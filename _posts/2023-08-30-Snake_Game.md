@@ -99,11 +99,11 @@ courses: { compsci: {week: 2} }
             <a id="new_game2" class="link-alert">new game</a>
             <br>
             <p>Speed:
-                <input id="speed1" type="radio" name="speed" value="120" checked/>
+                <input id="speed1" type="radio" name="speed" value="100" checked/>
                 <label for="speed1">Slow</label>
-                <input id="speed2" type="radio" name="speed" value="75"/>
+                <input id="speed2" type="radio" name="speed" value="50"/>
                 <label for="speed2">Normal</label>
-                <input id="speed3" type="radio" name="speed" value="35"/>
+                <input id="speed3" type="radio" name="speed" value="20"/>
                 <label for="speed3">Fast</label>
             </p>
             <p>Wall:
