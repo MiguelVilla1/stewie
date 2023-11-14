@@ -11,7 +11,7 @@ courses: { compsci: {week: 13} }
 ## Monday
 Set up github pages shared repository and begin planning on Binary logic warmup project.
 ## Tuesday
-
+Start on SASS project, plan roles, and add SASS techtalk notes to student repository.
 ## Wednesday
 
 ## Thursday
