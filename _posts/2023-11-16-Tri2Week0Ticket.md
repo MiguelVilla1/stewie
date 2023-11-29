@@ -3,7 +3,7 @@ toc: true
 comments: false
 layout: post
 title: Review Ticket
-description: This is the Review Ticket for Week 1
+description: This is the Review Ticket for Week 0
 type: plans
 courses: { compsci: {week: 13} }
 ---

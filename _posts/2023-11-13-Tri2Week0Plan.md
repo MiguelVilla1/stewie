@@ -2,8 +2,8 @@
 toc: true
 comments: false
 layout: post
-title: Tri 2 Week 1 Plan
-description: This is the plan for week 1
+title: Tri 2 Week 0 Plan
+description: This is the plan for week 0
 type: plans
 courses: { compsci: {week: 13} }
 ---
