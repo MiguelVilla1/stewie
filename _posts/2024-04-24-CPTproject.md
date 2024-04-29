@@ -51,7 +51,7 @@ permalink: /CPTgame
 
 <div class="container">
     <h1>Number Guessing Game</h1>
-    <p>Guess the number between 1 and 100:</p>
+    <p>Guess a number between 1 and 100:</p>
     <input type="text" id="guessInput">
     <button onclick="checkGuess()">Guess</button>
     <p id="feedback"></p>
@@ -67,7 +67,7 @@ permalink: /CPTgame
         var guess = document.getElementById("guessInput").value;
 
         if (!isValidGuess(guess)) {
-            document.getElementById("feedback").innerText = "Invalid input. Please enter a number between 1 and 100.";
+            document.getElementById("feedback").innerText = "Invalid input. Guess a number that's between 1 and 100.";
             return;
         }
 
@@ -104,17 +104,6 @@ permalink: /CPTgame
         }
     }
 
-    function playAgainPrompt() {
-        var playAgainInput = prompt("Do you want to play again? (yes/no)").toLowerCase();
-        if (playAgainInput === "yes") {
-            secretNumber = Math.floor(Math.random() * 100) + 1;
-            previousGuesses = [];
-            displayGuesses();
-        } else {
-            alert("Thank you for playing!");
-        }
-    }
-
     function runTests() {
         // Test isValidGuess function
         console.assert(isValidGuess(50) === true);
@@ -125,6 +114,12 @@ permalink: /CPTgame
 
     // Run tests
     runTests();
+
+    guessNumber();
+    answerMessage.innerHTML = "";
+
+    document.getElementById('resetButton').addEventListener('click', guessNumber);
+
 </script>
 
 </body>
