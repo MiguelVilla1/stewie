@@ -57,6 +57,7 @@ permalink: /CPTgame
     <p id="feedback"></p>
     <p>Previous guesses:</p>
     <ul id="guessList"></ul>
+    <button id="resetButton">Reset Game</button>
 </div>
 
 <script>
@@ -120,8 +121,7 @@ permalink: /CPTgame
 
     runTests();
 
-    var resetButton = document.getElementById('resetButton');
-    resetButton.addEventListener('click', resetGame);
+    document.getElementById('resetButton').addEventListener('click', resetGame);
 
 </script>
 
