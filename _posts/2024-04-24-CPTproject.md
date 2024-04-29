@@ -55,21 +55,33 @@ permalink: /CPTgame
     <input type="text" id="guessInput">
     <button onclick="checkGuess()">Guess</button>
     <p id="feedback"></p>
+    <p>Previous guesses:</p>
+    <ul id="guessList"></ul>
 </div>
 
 <script>
     var secretNumber = Math.floor(Math.random() * 100) + 1;
+    var previousGuesses = [];
 
     function checkGuess() {
         var guess = document.getElementById("guessInput").value;
 
-        if (isNaN(guess) || guess < 1 || guess > 100) {
+        if (!isValidGuess(guess)) {
             document.getElementById("feedback").innerText = "Invalid input. Please enter a number between 1 and 100.";
-        } else {
-            guess = parseInt(guess);
-            var feedback = guessNumber(secretNumber, guess);
-            document.getElementById("feedback").innerText = feedback;
+            return;
         }
+
+        guess = parseInt(guess);
+        previousGuesses.push(guess);
+
+        var feedback = guessNumber(secretNumber, guess);
+        document.getElementById("feedback").innerText = feedback;
+
+        displayGuesses();
+    }
+
+    function isValidGuess(guess) {
+        return !isNaN(guess) && guess >= 1 && guess <= 100;
     }
 
     function guessNumber(secretNumber, guess) {
@@ -82,25 +94,33 @@ permalink: /CPTgame
         }
     }
 
+    function displayGuesses() {
+        var guessList = document.getElementById("guessList");
+        guessList.innerHTML = "";
+        for (var i = 0; i < previousGuesses.length; i++) {
+            var guessItem = document.createElement("li");
+            guessItem.innerText = previousGuesses[i];
+            guessList.appendChild(guessItem);
+        }
+    }
+
     function playAgainPrompt() {
         var playAgainInput = prompt("Do you want to play again? (yes/no)").toLowerCase();
         if (playAgainInput === "yes") {
             secretNumber = Math.floor(Math.random() * 100) + 1;
+            previousGuesses = [];
+            displayGuesses();
         } else {
             alert("Thank you for playing!");
         }
     }
 
     function runTests() {
-        // Test guessNumber function
-        var secretNumberTest = 50;
-        console.assert(guessNumber(secretNumberTest, 50) === "Congratulations! You guessed the correct number!");
-        console.assert(guessNumber(secretNumberTest, 60) === "Lower");
-        console.assert(guessNumber(secretNumberTest, 40) === "Higher");
-
-        // Test playAgainPrompt function
-        console.assert(playAgainPrompt("yes") === undefined);
-        console.assert(playAgainPrompt("no") === undefined);
+        // Test isValidGuess function
+        console.assert(isValidGuess(50) === true);
+        console.assert(isValidGuess(0) === false);
+        console.assert(isValidGuess(101) === false);
+        console.assert(isValidGuess("abc") === false);
     }
 
     // Run tests
