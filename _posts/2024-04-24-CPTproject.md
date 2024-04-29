@@ -104,6 +104,13 @@ permalink: /CPTgame
         }
     }
 
+    function resetGame() {
+        secretNumber = Math.floor(Math.random() * 100) + 1;
+        previousGuesses = [];
+        document.getElementById("feedback").innerText = "";
+        displayGuesses();
+    }
+
     function runTests() {
         // Test isValidGuess function
         console.assert(isValidGuess(50) === true);
@@ -115,10 +122,9 @@ permalink: /CPTgame
     // Run tests
     runTests();
 
-    guessNumber();
-    answerMessage.innerHTML = "";
+    
+    document.getElementById('resetButton').addEventListener('click', resetGame);
 
-    document.getElementById('resetButton').addEventListener('click', guessNumber);
 
 </script>
 
