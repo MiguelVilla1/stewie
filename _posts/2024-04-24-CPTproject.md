@@ -11,9 +11,9 @@ permalink: /CPTgame
     <title>Number Guessing Game</title>
     <style>
         body {
-            background-color: #FF0000; /* Red background */
-            color: #FFFFFF; /* White text */
-            font-family: Arial, sans-serif; /* Font family */
+            background-color: #FF0000; 
+            color: #FFFFFF;
+            font-family: Arial, sans-serif; 
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -35,12 +35,12 @@ permalink: /CPTgame
             width: 200px;
         }
         button {
-            background-color: #FFFFFF; /* White button background */
-            color: #FF0000; /* Red button text color */
+            background-color: #FFFFFF; 
+            color: #FF0000; 
             cursor: pointer;
         }
         button:hover {
-            background-color: #FF4500; /* Darker red on hover */
+            background-color: #FF4500; 
         }
         p {
             font-size: 18px;
@@ -112,18 +112,16 @@ permalink: /CPTgame
     }
 
     function runTests() {
-        // Test isValidGuess function
         console.assert(isValidGuess(50) === true);
         console.assert(isValidGuess(0) === false);
         console.assert(isValidGuess(101) === false);
         console.assert(isValidGuess("abc") === false);
     }
 
-    // Run tests
     runTests();
-    
-    document.getElementById('resetButton').addEventListener('click', resetGame);
 
+    var resetButton = document.getElementById('resetButton');
+    resetButton.addEventListener('click', resetGame);
 
 </script>
 
