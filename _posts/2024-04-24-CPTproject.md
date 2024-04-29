@@ -8,7 +8,7 @@ permalink: /CPTgame
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Number Guessing Game</title>
+    <title>Higher or Lower Number Game</title>
     <style>
         body {
             background-color: #FF0000; 
@@ -50,14 +50,14 @@ permalink: /CPTgame
 <body>
 
 <div class="container">
-    <h1>Number Guessing Game</h1>
+    <h1>Higher or Lower Number Game</h1>
     <p>Guess a number between 1 and 100:</p>
     <input type="text" id="guessInput">
     <button onclick="checkGuess()">Guess</button>
     <p id="feedback"></p>
     <p>Previous guesses:</p>
     <ul id="guessList"></ul>
-    <button id="resetButton">Reset Game</button>
+    <button id="ResetButton">Reset Game</button>
 </div>
 
 <script>
@@ -78,7 +78,7 @@ permalink: /CPTgame
         var feedback = guessNumber(secretNumber, guess);
         document.getElementById("feedback").innerText = feedback;
 
-        displayGuesses();
+        ShowGuesses();
     }
 
     function isValidGuess(guess) {
@@ -95,7 +95,7 @@ permalink: /CPTgame
         }
     }
 
-    function displayGuesses() {
+    function ShowGuesses() {
         var guessList = document.getElementById("guessList");
         guessList.innerHTML = "";
         for (var i = 0; i < previousGuesses.length; i++) {
@@ -105,23 +105,24 @@ permalink: /CPTgame
         }
     }
 
-    function resetGame() {
+    function ResetGame() {
         secretNumber = Math.floor(Math.random() * 100) + 1;
         previousGuesses = [];
         document.getElementById("feedback").innerText = "";
-        displayGuesses();
+        ShowGuesses();
     }
 
-    function runTests() {
+    function TestGuesses() {
         console.assert(isValidGuess(50) === true);
+        console.assert(isValidGuess(-1) === false);
         console.assert(isValidGuess(0) === false);
         console.assert(isValidGuess(101) === false);
         console.assert(isValidGuess("abc") === false);
     }
 
-    runTests();
+    TestGuesses();
 
-    document.getElementById('resetButton').addEventListener('click', resetGame);
+    document.getElementById('ResetButton').addEventListener('click', ResetGame);
 
 </script>
 
