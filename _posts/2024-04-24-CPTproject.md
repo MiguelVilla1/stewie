@@ -121,7 +121,6 @@ permalink: /CPTgame
 
     // Run tests
     runTests();
-
     
     document.getElementById('resetButton').addEventListener('click', resetGame);
 
