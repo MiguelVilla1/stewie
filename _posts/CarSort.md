@@ -3,9 +3,8 @@ toc: true
 comments: false
 layout: post
 title: Car Sorter
-courses: { compsci: {week: 26} }
+courses: { compsci: {week: 35} }
 type: hacks
-permalink: /CarSorter
 ---
 
 <html lang="en">
