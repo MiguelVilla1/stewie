@@ -20,7 +20,7 @@ permalink: /CarHome
             text-align: center;
             margin: 0;
             padding: 0;
-            background-color: #f8f9fa; /* Added background color */
+            background-color: #e0f7fa; /* Changed background color to light blue */
         }
         h1 {
             margin: 40px 0; /* Increased margin */
