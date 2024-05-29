@@ -52,9 +52,9 @@ permalink: /HondaModels
             cursor: pointer;
         }
     </style>
-</head>
 <div class="button">
             <a href="CarHome">Back To Home</a>
+</head>
 <body>
     <h1>Honda Car Models</h1>
     <button id="fetchDataBtn">Retrieve Data</button>
