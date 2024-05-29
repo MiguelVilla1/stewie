@@ -7,6 +7,7 @@ courses: { compsci: {week: 31} }
 type: hacks
 ---
 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -18,25 +19,32 @@ type: hacks
             text-align: center;
             margin: 0;
             padding: 0;
+            background-color: #f8f9fa; /* Added background color */
         }
         h1 {
-            margin: 20px 0;
+            margin: 40px 0; /* Increased margin */
+            color: #333; /* Changed color for better readability */
         }
         .container {
             display: flex;
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
-            margin: 20px;
+            margin: 20px auto; /* Centered container and adjusted margin */
+            max-width: 800px; /* Added max-width for better responsiveness */
         }
         .image-button {
-            margin: 10px;
+            margin: 20px;
             border: 2px solid #ddd;
             border-radius: 10px;
             overflow: hidden;
             width: 200px;
             height: 150px;
             position: relative;
+            transition: transform 0.3s ease; /* Added smooth transition */
+        }
+        .image-button:hover {
+            transform: scale(1.05); /* Increased size on hover */
         }
         .image-button img {
             width: 100%;
@@ -44,24 +52,21 @@ type: hacks
             object-fit: cover;
         }
         .image-button a {
-            display: block;
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             text-decoration: none;
             color: white;
-            font-size: 20px;
-            background-color: rgba(0, 0, 0, 0.5);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            opacity: 0;
+            font-size: 18px; /* Adjusted font size */
+            background-color: rgba(0, 0, 0, 0.7); /* Improved contrast */
+            padding: 10px 20px; /* Added padding */
+            border-radius: 5px; /* Added border radius */
+            opacity: 0; /* Hidden by default */
             transition: opacity 0.3s;
         }
         .image-button:hover a {
-            opacity: 1;
+            opacity: 1; /* Visible on hover */
         }
     </style>
 </head>
@@ -73,11 +78,11 @@ type: hacks
             <a href="https://miguelvilla1.github.io/stewie//2024/05/27/CarSortingTables.html">Ford</a>
         </div>
         <div class="image-button">
-            <img src="car2.jpg" alt="Car 2">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/BMW.svg/768px-BMW.svg.png" alt="Car 2">
             <a href="page2.html">BMW</a>
         </div>
         <div class="image-button">
-            <img src="car3.jpg" alt="Car 3">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Honda.svg/2560px-Honda.svg.png" alt="Car 3">
             <a href="page3.html">Honda</a>
         </div>
     </div>
