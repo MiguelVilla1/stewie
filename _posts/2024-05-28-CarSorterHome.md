@@ -85,11 +85,11 @@ permalink: /CarHome
         </div>
         <div class="image-button">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/BMW.svg/768px-BMW.svg.png" alt="Car 2">
-            <a href="page2.html">BMW</a>
+            <a href="BMWmodels">BMW</a>
         </div>
         <div class="image-button">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Honda.svg/2560px-Honda.svg.png" alt="Car 3">
-            <a href="page3.html">Honda</a>
+            <a href="HondaModels">Honda</a>
         </div>
     </div>
 </body>
