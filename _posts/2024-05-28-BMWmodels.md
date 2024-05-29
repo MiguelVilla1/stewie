@@ -54,7 +54,7 @@ permalink: /BMWmodels
     </style>
 <div class="button">
             <a href="CarHome">Back To Home</a>
-</head>
+
 <body>
     <h1>BMW Car Models</h1>
     <button id="fetchDataBtn">Retrieve Data</button>
@@ -125,4 +125,4 @@ permalink: /BMWmodels
         }
     </script>
 </body>
-</html>
+

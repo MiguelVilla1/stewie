@@ -54,8 +54,7 @@ permalink: /FordModels
     </style>
 <div class="button">
             <a href="CarHome">Back To Home</a>
-            
-</head>
+
 <body>
     <h1>Ford Car Models</h1>
     <button id="fetchDataBtn">Retrieve Data</button>
@@ -127,4 +126,3 @@ permalink: /FordModels
     </script>
 </body>
 
-</html>
