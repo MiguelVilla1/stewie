@@ -5,6 +5,7 @@ layout: post
 title: Ford Sorter
 courses: { compsci: {week: 35} }
 type: hacks
+permalink: /FordModels
 ---
 
 <html lang="en">
@@ -51,6 +52,8 @@ type: hacks
             cursor: pointer;
         }
     </style>
+<div class="button">
+            <a href="CarHome">Back To Home</a>
 </head>
 <body>
     <h1>Ford Car Models</h1>
