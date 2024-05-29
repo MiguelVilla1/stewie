@@ -17,6 +17,8 @@ permalink: /BMWmodels
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
+            background: url('https://cdn.dicklovett.co.uk/uploads/header_image/2_90_l.jpg?v=1643385270') no-repeat center center fixed;
+            background-size: cover;
         }
         h1 {
             text-align: center;

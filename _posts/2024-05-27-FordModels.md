@@ -17,6 +17,8 @@ permalink: /FordModels
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
+            background: url('https://www.fordstoremorganhill.com/static/dealer-4899/Newspaper_Ad/Exterior_ImageSM--FordMorganHill.jpeg') no-repeat center center fixed;
+            background-size: cover;
         }
         h1 {
             text-align: center;

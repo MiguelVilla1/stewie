@@ -17,6 +17,8 @@ permalink: /HondaModels
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
+            background: url('https://di-uploads-pod13.dealerinspire.com/hondaofolathe/uploads/2024/04/Honda-1440x576-1.jpg') no-repeat center center fixed;
+            background-size: cover;
         }
         h1 {
             text-align: center;
