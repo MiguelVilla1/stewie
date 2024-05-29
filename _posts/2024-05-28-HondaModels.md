@@ -2,7 +2,7 @@
 toc: true
 comments: false
 layout: post
-title: Car Sorter
+title: Honda Sorter
 courses: { compsci: {week: 35} }
 type: hacks
 ---
@@ -11,7 +11,7 @@ type: hacks
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ford Car Models</title>
+    <title>Honda Car Models</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -53,7 +53,7 @@ type: hacks
     </style>
 </head>
 <body>
-    <h1>Ford Car Models</h1>
+    <h1>Honda Car Models</h1>
     <button id="fetchDataBtn">Retrieve Data</button>
     <table id="carTable">
         <thead>
@@ -71,10 +71,9 @@ type: hacks
     <script>
         document.getElementById('fetchDataBtn').addEventListener('click', fetchCarData);
         let currentSortColumn = '';
-        let currentSortOrder = 'asc';
-
+        let currentSortOrder = 'asc'; 
         function fetchCarData() {
-            fetch('http://127.0.0.1:5000/cars')
+            fetch('http://127.0.0.1:5000/cars/honda')
                 .then(response => response.json())
                 .then(data => {
                     populateTable(data);
@@ -83,7 +82,6 @@ type: hacks
                     console.error('Error fetching data:', error);
                 });
         }
-
         function sortTable(column) {
             if (currentSortColumn === column) {
                 currentSortOrder = currentSortOrder === 'asc' ? 'desc' : 'asc';
@@ -91,7 +89,7 @@ type: hacks
                 currentSortColumn = column;
                 currentSortOrder = 'asc';
             }
-            fetch(`http://127.0.0.1:5000/sort_cars?sort_by=${column}&order=${currentSortOrder}`)
+            fetch(`http://127.0.0.1:5000/sort_cars/honda?sort_by=${column}&order=${currentSortOrder}`)
                 .then(response => response.json())
                 .then(data => {
                     populateTable(data);
@@ -101,7 +99,6 @@ type: hacks
                     console.error('Error sorting data:', error);
                 });
         }
-
         function populateTable(data) {
             const tableBody = document.getElementById('carTable').getElementsByTagName('tbody')[0];
             tableBody.innerHTML = ''; // Clear previous data
@@ -113,13 +110,12 @@ type: hacks
                 row.insertCell(3).innerText = car.horsepower;
             });
         }
-
         function updateSortIndicators(column) {
             const ths = document.querySelectorAll("#carTable th");
             ths.forEach(th => {
                 th.classList.remove("sort-asc", "sort-desc");
             });
-            const sortedTh = Array.from(ths).find(th => th.innerText.toLowerCase() === column.replace('_', ' '));
+            const sortedTh = Array.from(ths).find(th => th.innerText.toLowerCase() === column);
             if (sortedTh) {
                 sortedTh.classList.add(currentSortOrder === 'asc' ? 'sort-asc' : 'sort-desc');
             }
