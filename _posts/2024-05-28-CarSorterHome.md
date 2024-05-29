@@ -79,21 +79,12 @@ permalink: /CarHome
             <a href="FordModels">Ford</a>
         </div>
         <div class="image-button">
-<<<<<<< HEAD
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/BMW.svg/768px-BMW.svg.png" alt="Car 2">
             <a href="page2.html">BMW</a>
         </div>
         <div class="image-button">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Honda.svg/2560px-Honda.svg.png" alt="Car 3">
             <a href="page3.html">Honda</a>
-=======
-            <img src="car2.jpg" alt="Car 2">
-            <a href="BMWmodels">BMW</a>
-        </div>
-        <div class="image-button">
-            <img src="car3.jpg" alt="Car 3">
-            <a href="HondaModels">Honda</a>
->>>>>>> 943d2ed7ae48d20f64547b26a3479b31fce640e9
         </div>
     </div>
 </body>
