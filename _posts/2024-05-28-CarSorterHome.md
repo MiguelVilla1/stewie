@@ -9,6 +9,7 @@ permalink: /CarHome
 ---
 
 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -20,11 +21,13 @@ permalink: /CarHome
             text-align: center;
             margin: 0;
             padding: 0;
-            background-color: #e0f7fa; /* Changed background color to light blue */
+            background: url('https://media.istockphoto.com/id/1156933946/photo/international-race-track.jpg?s=612x612&w=0&k=20&c=1PMCZ35aqdXimlTYz9WE1TF3IA_X_FAI7ObGhqveo7M=') no-repeat center center fixed;
+            background-size: cover;
         }
         h1 {
             margin: 40px 0; /* Increased margin */
-            color: #333; /* Changed color for better readability */
+            color: #fff; /* Changed color to white for better readability on dark background */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Added text shadow for better readability */
         }
         .container {
             display: flex;
@@ -33,6 +36,9 @@ permalink: /CarHome
             flex-wrap: wrap;
             margin: 20px auto; /* Centered container and adjusted margin */
             max-width: 800px; /* Added max-width for better responsiveness */
+            background-color: rgba(255, 255, 255, 0.8); /* Added semi-transparent background */
+            border-radius: 10px; /* Rounded corners */
+            padding: 20px; /* Added padding */
         }
         .image-button {
             margin: 20px;
