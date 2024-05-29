@@ -5,6 +5,7 @@ layout: post
 title: Ford Sorter
 courses: { compsci: {week: 35} }
 type: hacks
+permalink: /FordModels
 ---
 
 <html lang="en">

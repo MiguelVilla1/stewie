@@ -5,6 +5,7 @@ layout: post
 title: BMW Sorter
 courses: { compsci: {week: 35} }
 type: hacks
+permalink: /BMWmodels
 ---
 
 <html lang="en">

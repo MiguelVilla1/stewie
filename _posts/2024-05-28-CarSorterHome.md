@@ -5,6 +5,7 @@ layout: post
 title: Car Sorter Home
 courses: { compsci: {week: 31} }
 type: hacks
+permalink: /CarHome
 ---
 
 <html lang="en">
@@ -66,19 +67,19 @@ type: hacks
     </style>
 </head>
 <body>
-    <h1>Welcome to Our Website</h1>
+    <h1>Welcome to Our Dealership! Choose a Car Brand Here:</h1>
     <div class="container">
         <div class="image-button">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Ford_logo_flat.svg/2560px-Ford_logo_flat.svg.png" alt="Car 1">
-            <a href="https://miguelvilla1.github.io/stewie//2024/05/27/CarSortingTables.html">Ford</a>
+            <a href="FordModels">Ford</a>
         </div>
         <div class="image-button">
             <img src="car2.jpg" alt="Car 2">
-            <a href="page2.html">BMW</a>
+            <a href="BMWmodels">BMW</a>
         </div>
         <div class="image-button">
             <img src="car3.jpg" alt="Car 3">
-            <a href="page3.html">Honda</a>
+            <a href="HondaModels">Honda</a>
         </div>
     </div>
 </body>
