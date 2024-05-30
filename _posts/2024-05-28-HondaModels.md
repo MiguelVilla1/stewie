@@ -27,6 +27,7 @@ permalink: /HondaModels
             width: 100%;
             border-collapse: collapse;
             margin: 20px 0;
+            background-color: white;
         }
         th, td {
             padding: 10px;
