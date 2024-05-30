@@ -22,6 +22,7 @@ permalink: /FordModels
         }
         h1 {
             text-align: center;
+            color: white;
         }
         table {
             width: 100%;
