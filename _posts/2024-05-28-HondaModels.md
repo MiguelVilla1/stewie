@@ -35,6 +35,7 @@ permalink: /HondaModels
             border: 1px solid #ddd;
             text-align: left;
             color: white;
+            color: #333;
         }
         th {
             cursor: pointer;
