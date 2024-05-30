@@ -54,8 +54,7 @@ permalink: /HondaModels
             cursor: pointer;
         }
     </style>
-<div class="button">
-            <a href="CarHome">Back To Home</a>
+<button id="HomeButton" onclick="location.href='CarHome';">Back To Home</button>
 
 <body>
     <h1>Honda Car Models</h1>
