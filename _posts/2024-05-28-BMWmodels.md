@@ -34,6 +34,7 @@ permalink: /BMWmodels
             padding: 10px;
             border: 1px solid #ddd;
             text-align: left;
+            color: white;
         }
         th {
             cursor: pointer;
